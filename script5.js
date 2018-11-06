@@ -1,14 +1,8 @@
-const logNextNumber = function number(i) {
-    i = i || 0
-    console.log(i)
-    if (i < 10) number(++i)
+function call5With3(func){
+return func(5,3)
 }
-logNextNumber()
+
+call5With3(console.log) //5 , 3  in browser console
 
 
-const logNextNumber = function number(i) {
-    i = i || 0
-    console.log(10-i)
-    if (i < 10) number(++i)
-}
-logNextNumber()
+call5With3((a,b)=>a+b) //return 8
